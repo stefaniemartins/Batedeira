@@ -20,7 +20,10 @@ public class Batedeira
 
     public void setVelocidade(int velocidade)
     {
-        this.velocidade = velocidade;
+        if ((velocidade >= 0) && (velocidade <= 5))
+        {
+            this.velocidade = velocidade;
+        }
     }
 
     public int getPote()
